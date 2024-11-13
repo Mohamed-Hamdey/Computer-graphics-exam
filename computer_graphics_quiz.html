@@ -1,0 +1,1731 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Graphics MCQ Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .quiz-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+        .choices {
+            margin-left: 20px;
+        }
+        .choice {
+            margin: 10px 0;
+        }
+        .choice label {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .choice input[type="radio"] {
+            cursor: pointer;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #submitBtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #submitBtn:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        .correct {
+            background-color: #dff0d8;
+            border: 1px solid #d6e9c6;
+            color: #3c763d;
+        }
+        .incorrect {
+            background-color: #f2dede;
+            border: 1px solid #ebccd1;
+            color: #a94442;
+        }
+        .score-display {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Computer Graphics MCQ Quiz</h1>
+        <form id="quizForm">
+
+            <div class="question" id="q1">
+                <p><strong>﻿1. What is Computer Graphics primarily used for?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q1" value="A" id="q1A">
+                        <label for="q1A">A) Only for creating pictures</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q1" value="B" id="q1B">
+                        <label for="q1B">B) Only for business graphs</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q1" value="C" id="q1C">
+                        <label for="q1C">C) Creation and manipulation of pictures using computers</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q1" value="D" id="q1D">
+                        <label for="q1D">D) Only for engineering drawings</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q2">
+                <p><strong>2. Which of the following is NOT a main task of computer graphics?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q2" value="A" id="q2A">
+                        <label for="q2A">A) Modeling</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q2" value="B" id="q2B">
+                        <label for="q2B">B) Rendering</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q2" value="C" id="q2C">
+                        <label for="q2C">C) Animation</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q2" value="D" id="q2D">
+                        <label for="q2D">D) Database management</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q3">
+                <p><strong>3. The smallest addressable element in a display is called:</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q3" value="A" id="q3A">
+                        <label for="q3A">A) Pixel</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q3" value="B" id="q3B">
+                        <label for="q3B">B) Resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q3" value="C" id="q3C">
+                        <label for="q3C">C) Dot pitch</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q3" value="D" id="q3D">
+                        <label for="q3D">D) Scan line</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q4">
+                <p><strong>4. What is the standard aspect ratio for PCs?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q4" value="A" id="q4A">
+                        <label for="q4A">A) 16:9</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q4" value="B" id="q4B">
+                        <label for="q4B">B) 4:3</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q4" value="C" id="q4C">
+                        <label for="q4C">C) 2:1</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q4" value="D" id="q4D">
+                        <label for="q4D">D) 1:1</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q5">
+                <p><strong>5. In computer graphics, what does GPU stand for?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q5" value="A" id="q5A">
+                        <label for="q5A">A) General Processing Unit</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q5" value="B" id="q5B">
+                        <label for="q5B">B) Graphics Processing Unit</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q5" value="C" id="q5C">
+                        <label for="q5C">C) General Purpose Unit</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q5" value="D" id="q5D">
+                        <label for="q5D">D) Graphics Purpose Unit</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q6">
+                <p><strong>6. Which of the following is NOT a major element in a graphics system?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q6" value="A" id="q6A">
+                        <label for="q6A">A) Input devices</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q6" value="B" id="q6B">
+                        <label for="q6B">B) Central Processing Unit</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q6" value="C" id="q6C">
+                        <label for="q6C">C) Sound Card</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q6" value="D" id="q6D">
+                        <label for="q6D">D) Frame buffer</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q7">
+                <p><strong>7. What is the primary purpose of a frame buffer?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q7" value="A" id="q7A">
+                        <label for="q7A">A) To store program instructions</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q7" value="B" id="q7B">
+                        <label for="q7B">B) To store input devices data</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q7" value="C" id="q7C">
+                        <label for="q7C">C) To store the digital image to be displayed</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q7" value="D" id="q7D">
+                        <label for="q7D">D) To control the CPU</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q8">
+                <p><strong>8. The process of converting a geometric description of an object into a display device is called:</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q8" value="A" id="q8A">
+                        <label for="q8A">A) Scanning</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q8" value="B" id="q8B">
+                        <label for="q8B">B) Rendering</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q8" value="C" id="q8C">
+                        <label for="q8C">C) Modeling</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q8" value="D" id="q8D">
+                        <label for="q8D">D) Animation</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q9">
+                <p><strong>9. What is the refresh rate typically used in non-interlaced displays?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q9" value="A" id="q9A">
+                        <label for="q9A">A) 30 frames per second</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q9" value="B" id="q9B">
+                        <label for="q9B">B) 45 frames per second</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q9" value="C" id="q9C">
+                        <label for="q9C">C) 60 frames per second</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q9" value="D" id="q9D">
+                        <label for="q9D">D) 90 frames per second</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q10">
+                <p><strong>10. Which scanning method divides the scanning process into two passes?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q10" value="A" id="q10A">
+                        <label for="q10A">A) Random scan</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q10" value="B" id="q10B">
+                        <label for="q10B">B) Raster scan</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q10" value="C" id="q10C">
+                        <label for="q10C">C) Interlaced scan</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q10" value="D" id="q10D">
+                        <label for="q10D">D) Progressive scan</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q11">
+                <p><strong>11. What is the main advantage of shadow-mask method over beam penetration method?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q11" value="A" id="q11A">
+                        <label for="q11A">A) Lower cost</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q11" value="B" id="q11B">
+                        <label for="q11B">B) Higher resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q11" value="C" id="q11C">
+                        <label for="q11C">C) Wider range of colors</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q11" value="D" id="q11D">
+                        <label for="q11D">D) Better brightness</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q12">
+                <p><strong>12. In a color CRT, how many electron guns are typically used?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q12" value="A" id="q12A">
+                        <label for="q12A">A) One</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q12" value="B" id="q12B">
+                        <label for="q12B">B) Two</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q12" value="C" id="q12C">
+                        <label for="q12C">C) Three</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q12" value="D" id="q12D">
+                        <label for="q12D">D) Four</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q13">
+                <p><strong>13. What type of display is LCD?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q13" value="A" id="q13A">
+                        <label for="q13A">A) Emissive</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q13" value="B" id="q13B">
+                        <label for="q13B">B) Non-emissive</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q13" value="C" id="q13C">
+                        <label for="q13C">C) Both A and B</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q13" value="D" id="q13D">
+                        <label for="q13D">D) Neither A nor B</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q14">
+                <p><strong>14. What does CAD stand for in computer graphics?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q14" value="A" id="q14A">
+                        <label for="q14A">A) Computer Aided Drawing</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q14" value="B" id="q14B">
+                        <label for="q14B">B) Computer Aided Design</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q14" value="C" id="q14C">
+                        <label for="q14C">C) Computer Assisted Drawing</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q14" value="D" id="q14D">
+                        <label for="q14D">D) Computer Assisted Design</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q15">
+                <p><strong>15. Which of the following is an example of passive computer graphics?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q15" value="A" id="q15A">
+                        <label for="q15A">A) Video games</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q15" value="B" id="q15B">
+                        <label for="q15B">B) TV titles</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q15" value="C" id="q15C">
+                        <label for="q15C">C) CAD software</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q15" value="D" id="q15D">
+                        <label for="q15D">D) Interactive websites</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q16">
+                <p><strong>16. What determines the number of colors that can be displayed in a frame buffer?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q16" value="A" id="q16A">
+                        <label for="q16A">A) Resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q16" value="B" id="q16B">
+                        <label for="q16B">B) Refresh rate</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q16" value="C" id="q16C">
+                        <label for="q16C">C) Bit depth</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q16" value="D" id="q16D">
+                        <label for="q16D">D) Aspect ratio</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q17">
+                <p><strong>17. The distance between any two dots of the same color on a monitor is called:</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q17" value="A" id="q17A">
+                        <label for="q17A">A) Resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q17" value="B" id="q17B">
+                        <label for="q17B">B) Dot pitch</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q17" value="C" id="q17C">
+                        <label for="q17C">C) Pixel spacing</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q17" value="D" id="q17D">
+                        <label for="q17D">D) Color depth</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q18">
+                <p><strong>18. What is the primary purpose of the deflection yoke in a CRT?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q18" value="A" id="q18A">
+                        <label for="q18A">A) To create electrons</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q18" value="B" id="q18B">
+                        <label for="q18B">B) To control beam direction</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q18" value="C" id="q18C">
+                        <label for="q18C">C) To focus the beam</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q18" value="D" id="q18D">
+                        <label for="q18D">D) To create colors</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q19">
+                <p><strong>19. Which display method is commonly used in TV sets?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q19" value="A" id="q19A">
+                        <label for="q19A">A) Random scan</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q19" value="B" id="q19B">
+                        <label for="q19B">B) Raster scan</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q19" value="C" id="q19C">
+                        <label for="q19C">C) Vector scan</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q19" value="D" id="q19D">
+                        <label for="q19D">D) Direct scan</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q20">
+                <p><strong>20. What causes screen flicker in CRT displays?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q20" value="A" id="q20A">
+                        <label for="q20A">A) High refresh rate</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q20" value="B" id="q20B">
+                        <label for="q20B">B) Low refresh rate</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q20" value="C" id="q20C">
+                        <label for="q20C">C) High resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q20" value="D" id="q20D">
+                        <label for="q20D">D) Low resolution</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q21">
+                <p><strong>21. In a graphics system, what is the purpose of the display controller?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q21" value="A" id="q21A">
+                        <label for="q21A">A) To create images</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q21" value="B" id="q21B">
+                        <label for="q21B">B) To store images</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q21" value="C" id="q21C">
+                        <label for="q21C">C) To control display device operations</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q21" value="D" id="q21D">
+                        <label for="q21D">D) To process input data</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q22">
+                <p><strong>22. What is the main advantage of random scan displays?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q22" value="A" id="q22A">
+                        <label for="q22A">A) Better color representation</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q22" value="B" id="q22B">
+                        <label for="q22B">B) Higher resolution for line drawings</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q22" value="C" id="q22C">
+                        <label for="q22C">C) Faster refresh rate</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q22" value="D" id="q22D">
+                        <label for="q22D">D) Lower cost</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q23">
+                <p><strong>23. How many colors can be produced using the beam penetration method?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q23" value="A" id="q23A">
+                        <label for="q23A">A) Two</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q23" value="B" id="q23B">
+                        <label for="q23B">B) Three</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q23" value="C" id="q23C">
+                        <label for="q23C">C) Four</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q23" value="D" id="q23D">
+                        <label for="q23D">D) Eight</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q24">
+                <p><strong>24. What type of memory is a frame buffer?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q24" value="A" id="q24A">
+                        <label for="q24A">A) Cache memory</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q24" value="B" id="q24B">
+                        <label for="q24B">B) Virtual memory</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q24" value="C" id="q24C">
+                        <label for="q24C">C) Digital memory</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q24" value="D" id="q24D">
+                        <label for="q24D">D) Analog memory</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q25">
+                <p><strong>25. The process of moving the electron beam back to the start position is called:</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q25" value="A" id="q25A">
+                        <label for="q25A">A) Scanning</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q25" value="B" id="q25B">
+                        <label for="q25B">B) Refreshing</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q25" value="C" id="q25C">
+                        <label for="q25C">C) Retracing</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q25" value="D" id="q25D">
+                        <label for="q25D">D) Resetting</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q26">
+                <p><strong>26. What is the main difference between LED and LCD displays?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q26" value="A" id="q26A">
+                        <label for="q26A">A) LED is emissive, LCD is non-emissive</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q26" value="B" id="q26B">
+                        <label for="q26B">B) LED is cheaper, LCD is expensive</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q26" value="C" id="q26C">
+                        <label for="q26C">C) LED uses less power, LCD uses more power</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q26" value="D" id="q26D">
+                        <label for="q26D">D) LED has better resolution, LCD has lower resolution</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q27">
+                <p><strong>27. In computer graphics, what does RGB stand for?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q27" value="A" id="q27A">
+                        <label for="q27A">A) Random Green Blue</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q27" value="B" id="q27B">
+                        <label for="q27B">B) Red Gray Blue</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q27" value="C" id="q27C">
+                        <label for="q27C">C) Red Green Blue</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q27" value="D" id="q27D">
+                        <label for="q27D">D) Random Gray Black</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q28">
+                <p><strong>28. Which of the following is NOT an application of computer graphics?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q28" value="A" id="q28A">
+                        <label for="q28A">A) Flight simulators</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q28" value="B" id="q28B">
+                        <label for="q28B">B) Medical imaging</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q28" value="C" id="q28C">
+                        <label for="q28C">C) Audio processing</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q28" value="D" id="q28D">
+                        <label for="q28D">D) Architectural design</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q29">
+                <p><strong>29. What is the purpose of phosphor in a CRT display?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q29" value="A" id="q29A">
+                        <label for="q29A">A) To generate electrons</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q29" value="B" id="q29B">
+                        <label for="q29B">B) To emit light when struck by electrons</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q29" value="C" id="q29C">
+                        <label for="q29C">C) To focus the electron beam</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q29" value="D" id="q29D">
+                        <label for="q29D">D) To control color intensity</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q30">
+                <p><strong>30. What is persistence in CRT displays?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q30" value="A" id="q30A">
+                        <label for="q30A">A) The time a pixel remains illuminated after the electron beam has moved</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q30" value="B" id="q30B">
+                        <label for="q30B">B) The brightness of the display</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q30" value="C" id="q30C">
+                        <label for="q30C">C) The resolution of the screen</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q30" value="D" id="q30D">
+                        <label for="q30D">D) The refresh rate of the display</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q31">
+                <p><strong>31. For a 1024 x 768 resolution display with 24-bit color, how many bits are needed per pixel?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q31" value="A" id="q31A">
+                        <label for="q31A">A) 8 bits</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q31" value="B" id="q31B">
+                        <label for="q31B">B) 16 bits</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q31" value="C" id="q31C">
+                        <label for="q31C">C) 24 bits</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q31" value="D" id="q31D">
+                        <label for="q31D">D) 32 bits</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q32">
+                <p><strong>32. What is the main advantage of interlaced scanning?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q32" value="A" id="q32A">
+                        <label for="q32A">A) Higher resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q32" value="B" id="q32B">
+                        <label for="q32B">B) Better color quality</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q32" value="C" id="q32C">
+                        <label for="q32C">C) Reduced flicker at lower refresh rates</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q32" value="D" id="q32D">
+                        <label for="q32D">D) Faster display speed</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q33">
+                <p><strong>33. In interactive computer graphics, what type of communication exists?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q33" value="A" id="q33A">
+                        <label for="q33A">A) One-way communication</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q33" value="B" id="q33B">
+                        <label for="q33B">B) Two-way communication</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q33" value="C" id="q33C">
+                        <label for="q33C">C) No communication</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q33" value="D" id="q33D">
+                        <label for="q33D">D) Indirect communication</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q34">
+                <p><strong>34. What component of a graphics system converts digital signals to analog signals?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q34" value="A" id="q34A">
+                        <label for="q34A">A) Frame buffer</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q34" value="B" id="q34B">
+                        <label for="q34B">B) CPU</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q34" value="C" id="q34C">
+                        <label for="q34C">C) Digital-to-Analog Converter (DAC)</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q34" value="D" id="q34D">
+                        <label for="q34D">D) GPU</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q35">
+                <p><strong>35. Which of the following is a characteristic of raster scan systems?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q35" value="A" id="q35A">
+                        <label for="q35A">A) Line-by-line scanning</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q35" value="B" id="q35B">
+                        <label for="q35B">B) Random point-to-point scanning</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q35" value="C" id="q35C">
+                        <label for="q35C">C) Vector-based drawing</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q35" value="D" id="q35D">
+                        <label for="q35D">D) Direct vector scanning</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q36">
+                <p><strong>36. What is the primary function of a graphics package like OpenGL?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q36" value="A" id="q36A">
+                        <label for="q36A">A) Image editing</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q36" value="B" id="q36B">
+                        <label for="q36B">B) 3D modeling</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q36" value="C" id="q36C">
+                        <label for="q36C">C) Programming interface for graphics</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q36" value="D" id="q36D">
+                        <label for="q36D">D) Text processing</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q37">
+                <p><strong>37. How many primary colors are used in a shadow-mask CRT?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q37" value="A" id="q37A">
+                        <label for="q37A">A) Two</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q37" value="B" id="q37B">
+                        <label for="q37B">B) Three</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q37" value="C" id="q37C">
+                        <label for="q37C">C) Four</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q37" value="D" id="q37D">
+                        <label for="q37D">D) Five</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q38">
+                <p><strong>38. What causes a white pixel in a color CRT display?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q38" value="A" id="q38A">
+                        <label for="q38A">A) No electron beam activation</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q38" value="B" id="q38B">
+                        <label for="q38B">B) Maximum intensity of all three electron beams</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q38" value="C" id="q38C">
+                        <label for="q38C">C) Only red beam activation</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q38" value="D" id="q38D">
+                        <label for="q38D">D) Only blue beam activation</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q39">
+                <p><strong>39. What is the main purpose of a lookup table in computer graphics?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q39" value="A" id="q39A">
+                        <label for="q39A">A) To store pixel coordinates</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q39" value="B" id="q39B">
+                        <label for="q39B">B) To map color values to pixel intensities</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q39" value="C" id="q39C">
+                        <label for="q39C">C) To store resolution information</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q39" value="D" id="q39D">
+                        <label for="q39D">D) To control refresh rate</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q40">
+                <p><strong>40. Which type of display is most commonly used in modern laptops?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q40" value="A" id="q40A">
+                        <label for="q40A">A) CRT</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q40" value="B" id="q40B">
+                        <label for="q40B">B) LCD</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q40" value="C" id="q40C">
+                        <label for="q40C">C) Plasma</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q40" value="D" id="q40D">
+                        <label for="q40D">D) Vector display</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q41">
+                <p><strong>41. What is the main advantage of flat-panel displays over CRTs?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q41" value="A" id="q41A">
+                        <label for="q41A">A) Better color quality</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q41" value="B" id="q41B">
+                        <label for="q41B">B) Higher resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q41" value="C" id="q41C">
+                        <label for="q41C">C) Reduced volume and weight</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q41" value="D" id="q41D">
+                        <label for="q41D">D) Lower cost</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q42">
+                <p><strong>42. In computer graphics, what does CAM stand for?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q42" value="A" id="q42A">
+                        <label for="q42A">A) Computer Aided Manufacturing</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q42" value="B" id="q42B">
+                        <label for="q42B">B) Computer Assisted Modeling</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q42" value="C" id="q42C">
+                        <label for="q42C">C) Computer Aided Management</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q42" value="D" id="q42D">
+                        <label for="q42D">D) Computer Assisted Maintenance</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q43">
+                <p><strong>43. What determines the smoothness of diagonal lines in a raster display?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q43" value="A" id="q43A">
+                        <label for="q43A">A) Refresh rate</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q43" value="B" id="q43B">
+                        <label for="q43B">B) Resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q43" value="C" id="q43C">
+                        <label for="q43C">C) Color depth</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q43" value="D" id="q43D">
+                        <label for="q43D">D) Aspect ratio</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q44">
+                <p><strong>44. Which of the following is a characteristic of vector graphics?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q44" value="A" id="q44A">
+                        <label for="q44A">A) Pixel-based</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q44" value="B" id="q44B">
+                        <label for="q44B">B) Resolution dependent</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q44" value="C" id="q44C">
+                        <label for="q44C">C) Mathematical formulas based</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q44" value="D" id="q44D">
+                        <label for="q44D">D) Fixed resolution</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q45">
+                <p><strong>45. What is the main purpose of anti-aliasing in computer graphics?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q45" value="A" id="q45A">
+                        <label for="q45A">A) To increase resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q45" value="B" id="q45B">
+                        <label for="q45B">B) To smooth jagged edges</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q45" value="C" id="q45C">
+                        <label for="q45C">C) To improve color depth</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q45" value="D" id="q45D">
+                        <label for="q45D">D) To increase refresh rate</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q46">
+                <p><strong>46. What type of memory organization is used in a frame buffer?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q46" value="A" id="q46A">
+                        <label for="q46A">A) Stack</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q46" value="B" id="q46B">
+                        <label for="q46B">B) Queue</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q46" value="C" id="q46C">
+                        <label for="q46C">C) Array</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q46" value="D" id="q46D">
+                        <label for="q46D">D) Linked list</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q47">
+                <p><strong>47. In computer graphics, what is modeling primarily concerned with?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q47" value="A" id="q47A">
+                        <label for="q47A">A) Creating animations</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q47" value="B" id="q47B">
+                        <label for="q47B">B) Defining object geometry</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q47" value="C" id="q47C">
+                        <label for="q47C">C) Controlling display brightness</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q47" value="D" id="q47D">
+                        <label for="q47D">D) Managing color depth</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q48">
+                <p><strong>48. What is the primary function of a graphics processor?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q48" value="A" id="q48A">
+                        <label for="q48A">A) Sound processing</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q48" value="B" id="q48B">
+                        <label for="q48B">B) Network communication</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q48" value="C" id="q48C">
+                        <label for="q48C">C) Image rendering</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q48" value="D" id="q48D">
+                        <label for="q48D">D) Data storage</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q49">
+                <p><strong>49. Which scanning method processes all lines in sequence?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q49" value="A" id="q49A">
+                        <label for="q49A">A) Random scan</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q49" value="B" id="q49B">
+                        <label for="q49B">B) Interlaced scan</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q49" value="C" id="q49C">
+                        <label for="q49C">C) Non-interlaced scan</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q49" value="D" id="q49D">
+                        <label for="q49D">D) Vector scan</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q50">
+                <p><strong>50. What is the main advantage of using a color lookup table?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q50" value="A" id="q50A">
+                        <label for="q50A">A) Higher resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q50" value="B" id="q50B">
+                        <label for="q50B">B) Faster processing</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q50" value="C" id="q50C">
+                        <label for="q50C">C) Flexible color manipulation</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q50" value="D" id="q50D">
+                        <label for="q50D">D) Better refresh rate</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q51">
+                <p><strong>51. How is depth represented in a frame buffer?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q51" value="A" id="q51A">
+                        <label for="q51A">A) Number of pixels</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q51" value="B" id="q51B">
+                        <label for="q51B">B) Number of bits per pixel</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q51" value="C" id="q51C">
+                        <label for="q51C">C) Screen resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q51" value="D" id="q51D">
+                        <label for="q51D">D) Refresh rate</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q52">
+                <p><strong>52. What is the primary purpose of a display file in computer graphics?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q52" value="A" id="q52A">
+                        <label for="q52A">A) Store final images</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q52" value="B" id="q52B">
+                        <label for="q52B">B) Store drawing instructions</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q52" value="C" id="q52C">
+                        <label for="q52C">C) Control refresh rate</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q52" value="D" id="q52D">
+                        <label for="q52D">D) Manage color depth</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q53">
+                <p><strong>53. Which of the following affects the quality of display in a CRT?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q53" value="A" id="q53A">
+                        <label for="q53A">A) Only resolution</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q53" value="B" id="q53B">
+                        <label for="q53B">B) Only refresh rate</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q53" value="C" id="q53C">
+                        <label for="q53C">C) Only color depth</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q53" value="D" id="q53D">
+                        <label for="q53D">D) All of the above</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q54">
+                <p><strong>54. What is the main function of the electron gun in a CRT?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q54" value="A" id="q54A">
+                        <label for="q54A">A) To create phosphor coating</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q54" value="B" id="q54B">
+                        <label for="q54B">B) To generate electron beam</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q54" value="C" id="q54C">
+                        <label for="q54C">C) To control screen brightness</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q54" value="D" id="q54D">
+                        <label for="q54D">D) To manage color display</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="question" id="q55">
+                <p><strong>55. In computer graphics, what does GKS stand for?</strong></p>
+                <div class="choices">
+
+                    <div class="choice">
+                        <input type="radio" name="q55" value="A" id="q55A">
+                        <label for="q55A">A) Graphics Kernel System</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q55" value="B" id="q55B">
+                        <label for="q55B">B) Graphics Key System</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q55" value="C" id="q55C">
+                        <label for="q55C">C) General Kernel System</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="radio" name="q55" value="D" id="q55D">
+                        <label for="q55D">D) General Key System</label>
+                    </div>
+
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <div class="button-container">
+                <button type="button" id="submitBtn">Submit Quiz</button>
+            </div>
+            <div class="score-display"></div>
+        </form>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            2: 'D',
+            3: 'A',
+            4: 'B',
+            5: 'B',
+            6: 'C',
+            7: 'C',
+            8: 'B',
+            9: 'A',
+            10: 'C',
+            11: 'C',
+            12: 'C',
+            13: 'B',
+            14: 'B',
+            15: 'B',
+            16: 'C',
+            17: 'B',
+            18: 'B',
+            19: 'B',
+            20: 'B',
+            21: 'C',
+            22: 'B',
+            23: 'C',
+            24: 'C',
+            25: 'C',
+            26: 'A',
+            27: 'C',
+            28: 'C',
+            29: 'B',
+            30: 'A',
+            31: 'C',
+            32: 'C',
+            33: 'B',
+            34: 'C',
+            35: 'A',
+            36: 'C',
+            37: 'B',
+            38: 'B',
+            39: 'B',
+            40: 'B',
+            41: 'C',
+            42: 'A',
+            43: 'B',
+            44: 'C',
+            45: 'B',
+            46: 'C',
+            47: 'B',
+            48: 'C',
+            49: 'C',
+            50: 'C',
+            51: 'B',
+            52: 'B',
+            53: 'D',
+            54: 'B',
+            55: 'A',
+
+        };
+
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            let score = 0;
+            let totalQuestions = Object.keys(correctAnswers).length;
+            
+            // Clear previous results
+            document.querySelectorAll('.result').forEach(div => {
+                div.style.display = 'none';
+                div.textContent = '';
+                div.className = 'result';
+            });
+
+            // Check each question
+            for (let questionNum in correctAnswers) {
+                const selected = document.querySelector(`input[name="q${questionNum}"]:checked`);
+                const resultDiv = document.querySelector(`#q${questionNum} .result`);
+                resultDiv.style.display = 'block';
+                
+                if (!selected) {
+                    resultDiv.textContent = 'Please answer this question.';
+                    resultDiv.className = 'result incorrect';
+                    continue;
+                }
+
+                if (selected.value === correctAnswers[questionNum]) {
+                    score++;
+                    resultDiv.textContent = 'Correct!';
+                    resultDiv.className = 'result correct';
+                } else {
+                    resultDiv.textContent = `Incorrect. The correct answer is ${correctAnswers[questionNum]}.`;
+                    resultDiv.className = 'result incorrect';
+                }
+            }
+
+            // Display final score
+            const scoreDisplay = document.querySelector('.score-display');
+            scoreDisplay.textContent = `Your Score: ${score}/${totalQuestions} (${Math.round(score/totalQuestions*100)}%)`;
+        });
+    </script>
+</body>
+</html>
